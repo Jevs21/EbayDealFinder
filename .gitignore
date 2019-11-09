@@ -1,0 +1,4 @@
+node_modules/
+database.db
+testdatabase.db
+.nyc_output/

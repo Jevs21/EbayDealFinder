@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&amp;display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</head>
+<body>
+<div class='container-fluid'></div>
+<div class='row'>
+    <div class='col-md-2'></div>
+    <div class='col-md-8'>
+        <h2>Uri List:</h2>
+        <table id='uri_table' class='table'>
+            
+        </table>
+
+        <h2>Add a New Uri:</h2>
+        <div class="input-group">
+            <input id='name_input' type="text" class="form-control" placeholder="Name">
+            <input id='url_input' type="text" class="form-control" placeholder="URI">
+            <input id='price_point_input' type="text" class="form-control" placeholder="Price Point">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick='addNewUri()'>Add</button>
+            </div>
+        </div>
+        <div id='error_output'>
+
+        </div>
+        
+        <br>
+        <div id='output'></div>
+    </div>
+    <div class='col-md-2'></div>
+</div>
+</body>
+</html>
